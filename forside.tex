@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{article}
+% Use utf8
+\usepackage[utf8]{inputenc}
+% Define language
+\usepackage[norsk]{babel}
+% For images
+\usepackage{graphicx}
+
+\def \fagkode{IT1901}
+\def \fagtittel{Informatik Prosjektarbeid I}
+\def \studentnummer{742414}
+\def \gruppenummer{15}
+\def \ordtelling{1857}
+\def \tema{01 - Verktøy, sette opp miljøer}
+\title{Rapport}
+
+\begin{document}
+
+\makeatletter
+\begin{titlepage}
+    \begin{center}
+    \includegraphics[width=0.60\textwidth]{NTNU_logo.png}\\[1cm]
+    \textsc{\Large \fagkode}\\[0.5cm]
+    \textsc{\large \fagtittel}\\[0.5cm]
+
+    \rule{\linewidth}{0.5mm} \\[0.4cm]
+    { \huge \bfseries \@title \\[0.4cm] }
+    \rule{\linewidth}{0.5mm} \\[1.5cm]
+
+    \LARGE
+    \tema\\[1cm]
+
+    \large
+    Gruppe: \gruppenummer\\[0.25cm]
+
+    \large
+    Studentnummer: \studentnummer\\[0.25cm]
+
+    \large
+    Ordtelling: \ordtelling
+
+    \vfill
+
+    \large
+    \@date
+    \end{center}
+\end{titlepage}
+\makeatother
+
+\end{document}
